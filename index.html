@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad en Redes: 5 Ataques Principales en 2025</title>
+  <link rel="icon" href="assets/seguridad.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-animation"></div>
+    
+  <header class="full-header" id="mainHeader">
+    <div id="particles"></div>
+    
+    <!-- Logo universitario en la esquina superior derecha -->
+    <div class="university-logo">
+      <img src="assets/unach.svg" alt="UNACH" class="unach-logo">
+    </div>
+    
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Seguridad en Redes de Computadora</h1>
+        <div class="subtitle">Los 5 Ataques Más Relevantes en el Entorno Digital Actual</div>
+        <div class="author-info">
+          <p class="author-name">Alfredo Lopez Mendez</p>
+          <p class="publish-date">07 de marzo de 2025</p>
+        </div>
+        <div class="cyber-badge">SEGURIDAD EN COMPUTO</div>
+      </div>
+      <div class="header-image">
+        <!-- SVG de seguridad -->
+        <img src="assets/seguridad.png" alt="Seguridad en Redes" class="security-svg">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Desliza para explorar</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="intro-section">
+      <h2 class="section-title">Introducción y Contexto</h2>
+      <p>
+        La digitalización y la hiperconexión han transformado la forma en que ciudadanos y empresas interactúan; sin embargo,
+        esta evolución ha traído consigo un incremento notable en las vulnerabilidades y amenazas que afectan a los sistemas
+        informáticos. En este contexto, los ataques en redes de computadoras se han convertido en uno de los desafíos más
+        críticos para la seguridad digital.
+      </p>
+      
+      <div class="attack-categories">
+        <h3>Nuestra investigación identifica cinco tipos principales basados en su prevalencia e impacto:</h3>
+      
+        <div class="category-grid">
+          <div class="category-item">
+            <div class="category-icon"><i class="fas fa-ban"></i></div>
+            <div class="category-name">Denegación de Servicio</div>
+          </div>
+      
+          <div class="category-item">
+            <div class="category-icon"><i class="fas fa-user-secret"></i></div>
+            <div class="category-name">Hombre en el Medio</div>
+          </div>
+      
+          <div class="category-item">
+            <div class="category-icon"><i class="fas fa-ear-listen"></i></div>
+            <div class="category-name">Escucha Clandestina</div>
+          </div>
+      
+          <div class="category-item">
+            <div class="category-icon"><i class="fas fa-bug"></i></div>
+            <div class="category-name">Malware</div>
+          </div>
+      
+          <div class="category-item">
+            <div class="category-icon"><i class="fas fa-fish"></i></div>
+            <div class="category-name">Phishing</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-highlight">
+        <div class="stats-title"><i class="fas fa-chart-line"></i> Estadísticas Destacadas:</div>
+        <p>Los ataques DDoS han alcanzado niveles de petabits por segundo en 2024, y el Phishing ha pasado de
+            afectar al 72% de las empresas en 2017 a un 94% en 2023, según 
+            <a href="https://www.embroker.com/blog/cyber-attack-statistics/" target="_blank">Embroker</a>.</p>
+      </div>
+
+      <h2 class="section-title">Investigación</h2>
+      <p>
+        La investigación comenzó identificando los tipos más comunes de ataques en redes, consultando fuentes
+        como <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank">Cloudflare</a>, <a href="https://es.wikipedia.org/wiki/Phishing" target="_blank">Wikipedia</a>, <a href="https://www.malwarebytes.com/malware" target="_blank">Malwarebytes</a>, y estadísticas de <a href="https://www.terranovasecurity.com/blog/cyber-security-statistics" target="_blank">Terranova Security</a>. Se analizaron
+        clasificaciones, como las propuestas por ScienceDirect y NordVPN, para ordenar los ataques según su
+        impacto y objetivo.
+      </p>
+      <p>
+        Se priorizaron ataques directamente relacionados con redes, aunque se incluyeron algunos de capa de
+        aplicación (como Phishing) por su impacto en la seguridad de la red. La información se organizó para
+        facilitar la comprensión, y se incluyeron estadísts en entornos cloud en 2024, según Nationaicas recientes para contextualizar la relevancia, como
+        el aumento del 75% en intrusionel University.
+      </p>
+    </section>
+
+    <!-- Añadir contador de estadísticas -->
+    <div class="counter-container">
+      <div class="counter-item">
+        <div class="counter-icon"><i class="fas fa-shield-virus"></i></div>
+        <div class="counter-value" data-count="94">94 %</div>
+        <div class="counter-label">Empresas afectadas por phishing</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="counter-value" data-count="75">75 %</div>
+        <div class="counter-label">Aumento de intrusiones cloud</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon"><i class="fas fa-money-bill-wave"></i></div>
+        <div class="counter-value" data-count="3.9">$ 3.9</div>
+        <div class="counter-label">Costo promedio por brecha (millones $)</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon"><i class="fas fa-bug"></i></div>
+        <div class="counter-value" data-count="358">358 %</div>
+        <div class="counter-label">Aumento de malware</div>
+      </div>
+    </div>
+
+    <!-- Sección de alerta -->
+    <div class="cyber-alert">
+      <div class="alert-title"><i class="fas fa-exclamation-triangle"></i> Alerta de Seguridad</div>
+      <p>Los ataques cibernéticos evolucionan constantemente y la sofisticación de las amenazas aumenta día a día. Mantenerse informado y actualizado es crucial para la protección de sistemas y datos críticos.</p>
+    </div>
+
+    <!-- Sección para análisis de ataques -->
+    <section>
+      <h2 class="section-title">Análisis de Ataques</h2>
+
+      <div class="hed-content">
+        <div class="hed-pane none-pane" id="hed-overview">
+          <h2>Los 5 Ataques Principales</h2>
+          <p>Analizamos los cinco tipos de ataques más prevalentes e impactantes en las redes modernas. Cada
+            uno presenta características únicas, métodos de ejecución específicos y requiere estrategias de
+            prevención adaptadas.</p>
+          <p>Seleccione las pestañas para explorar cada tipo de ataque en detalle. La información incluye
+            definiciones, características distintivas, clasificación según su impacto, métodos de prevención
+            y un análisis crítico basado en las tendencias actuales.</p>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active-tab" data-target="overview"><i class="fas fa-globe"></i> Visión General</button>
+        <button class="tab" data-target="ransomware"><i class="fas fa-lock"></i> Ransomware</button>
+        <button class="tab" data-target="malware"><i class="fas fa-bug"></i> Malware</button>
+        <button class="tab" data-target="phishing"><i class="fas fa-fish"></i> Phishing</button>
+        <button class="tab" data-target="mitm"><i class="fas fa-user-secret"></i> Hombre en el Medio</button>
+        <button class="tab" data-target="dos-ddos"><i class="fas fa-ban"></i> DoS/DDoS</button>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active-pane" id="overview">
+          <h3>Niveles de Amenaza Actuales</h3>
+          <!-- Niveles de amenaza -->
+          <div class="threat-level">
+            <div class="threat-item">
+              <div class="threat-info">
+          <div class="threat-name">Ransomware</div>
+          <div class="threat-percent">92%</div>
+              </div>
+              <div class="progress-container">
+          <div class="progress-bar progress-critical" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="threat-item">
+              <div class="threat-info">
+          <div class="threat-name">Malware</div>
+          <div class="threat-percent">85%</div>
+              </div>
+              <div class="progress-container">
+          <div class="progress-bar progress-high" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="threat-item">
+              <div class="threat-info">
+          <div class="threat-name">Phishing</div>
+          <div class="threat-percent">78%</div>
+              </div>
+              <div class="progress-container">
+          <div class="progress-bar progress-high" style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="threat-item">
+              <div class="threat-info">
+          <div class="threat-name">Man-in-the-Middle</div>
+          <div class="threat-percent">65%</div>
+              </div>
+              <div class="progress-container">
+          <div class="progress-bar progress-medium" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="threat-item">
+              <div class="threat-info">
+          <div class="threat-name">DDos</div>
+          <div class="threat-percent">58%</div>
+              </div>
+              <div class="progress-container">
+          <div class="progress-bar progress-medium" style="width: 58%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="ransomware">
+          <h3>Ransomware</h3>
+          <p>El ransomware es un tipo específico de malware que cifra la información de la víctima, bloqueando el acceso a sus
+          archivos, y demanda el pago de un rescate para restaurar el acceso.</p>
+          <table class="detail-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Características</td>
+              <td>Secuestra datos cifrándolos, exige rescate, puede propagarse por redes, afecta a
+              individuos y organizaciones.</td>
+            </tr>
+            <tr>
+              <td>Clasificación</td>
+              <td>Ataques de disponibilidad y confidencialidad, bloqueando acceso a datos críticos.</td>
+            </tr>
+            <tr>
+              <td>Prevención</td>
+              <td>Copias de seguridad regulares, software antivirus, educación de usuarios, segmentación de
+              redes, según Malwarebytes.</td>
+            </tr>
+          </table>
+          <div class="stats-highlight">
+            <div class="stats-title"><i class="fas fa-chart-bar"></i> Análisis Crítico:</div>
+            <p>El ransomware ha tenido un impacto devastador en infraestructuras críticas, con ataques
+              coordinados que paralizan sistemas y exigen rescates millonarios. La prevención requiere una
+              combinación de medidas técnicas y educación continua.</p>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="malware">
+          <h3>Ataques de Malware</h3>
+          <p>El término malware engloba cualquier software malicioso diseñado para infiltrarse, dañar o robar información de un
+            sistema sin el consentimiento del usuario. Entre los subtipos se encuentran virus, gusanos, troyanos, spyware,
+            adware y
+            scareware.</p>
+          <table class="detail-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Características</td>
+              <td>Se propagan por redes, explotan vulnerabilidades, pueden robar datos, reducir velocidad,
+                bloquear archivos.</td>
+            </tr>
+            <tr>
+              <td>Clasificación</td>
+              <td>Pueden comprometer confidencialidad, integridad y disponibilidad, según tipo (adware,
+                spyware, etc.).</td>
+            </tr>
+            <tr>
+              <td>Prevención</td>
+              <td>Actualizaciones regulares, antivirus, educación de usuarios, segmentación de redes,
+                según Malwarebytes.</td>
+            </tr>
+          </table>
+          <div class="stats-highlight">
+            <div class="stats-title"><i class="fas fa-chart-bar"></i> Análisis Crítico:</div>
+            <p>El Malware ha visto un aumento del 358% en ataques en 2020, según AAG IT Support, y el
+              ransomware como Ryuk ha impactado organizaciones críticas. La educación del usuario es
+              clave, pero la sofisticación de los ataques requiere soluciones técnicas avanzadas.</p>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="phishing">
+          <h3>Ataques de Phishing</h3>
+          <p>El phishing es una técnica de ingeniería social en la que el atacante se hace pasar por una entidad confiable (banco,
+          empresa, red social) para engañar a la víctima y obtener información sensible como credenciales de acceso o datos
+          personales.</p>
+          <table class="detail-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Definición</td>
+              <td>Engañar a usuarios para revelar información sensible o instalar malware, generalmente
+                vía email, SMS, usando ingeniería social.</td>
+            </tr>
+            <tr>
+              <td>Características</td>
+              <td>Mensajes falsos con urgencia, dominios similares, errores ortográficos, pueden llevar a
+                brechas en la red.</td>
+            </tr>
+            <tr>
+              <td>Clasificación</td>
+              <td>Ataques de ingeniería social, explotando vulnerabilidades humanas.</td>
+            </tr>
+            <tr>
+              <td>Prevención</td>
+              <td>Educación de usuarios, filtros de email, autenticación multifactor, actualizaciones,
+                según Wikipedia.</td>
+            </tr>
+          </table>
+          <div class="stats-highlight">
+            <div class="stats-title"><i class="fas fa-chart-bar"></i> Análisis Crítico:</div>
+            <p>El Phishing ha afectado al 94% de las empresas en 2023, según Embroker, con un costo promedio
+              de $3.9 millones por brecha en 2018, según PurpleSec. La educación es efectiva, pero la
+              adopción de MFA es crucial para mitigar riesgos.</p>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="mitm">
+          <h3>Ataques de Hombre en el Medio (MitM)</h3>
+          <p>En un ataque Man-in-the-Middle, el atacante se sitúa en medio de la comunicación entre dos partes para interceptar,
+          alterar o robar la información transmitida sin que los usuarios sean conscientes de ello.</p>
+          <table class="detail-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Características</td>
+              <td>Pueden ser pasivos (escuchar) o activos (modificar), requieren suplantar endpoints,
+                efectivos sin autenticación.</td>
+            </tr>
+            <tr>
+              <td>Clasificación</td>
+              <td>Ataques de intercepción, afectando confidencialidad, integridad y disponibilidad.</td>
+            </tr>
+            <tr>
+              <td>Prevención</td>
+              <td>Encriptación (HTTPS, VPN), firmas digitales, autenticación mutua, actualizaciones
+                regulares, según Wikipedia.</td>
+            </tr>
+          </table>
+          <div class="stats-highlight">
+            <div class="stats-title"><i class="fas fa-chart-bar"></i> Análisis Crítico:</div>
+            <p>La prevalencia de MitM aumenta con redes públicas, y la falta de autenticación mutua es un
+              punto débil. La encriptación es esencial, pero los atacantes evolucionan, usando técnicas
+              como Evil Twin, lo que requiere monitoreo constante.</p>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="dos-ddos">
+          <h3>Ataques de Denegación de Servicio (DoS) y Distribuido (DDoS)</h3>
+          <p>Un ataque DoS (Denial of Service) busca saturar los recursos de un servidor o red, impidiendo que usuarios
+            legítimos
+            accedan a los servicios ofrecidos. Cuando se utiliza un gran número de dispositivos, se denomina DDoS (Distributed
+            Denial of Service).</p>
+          <table class="detail-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Características</td>
+              <td>Alto volumen de tráfico, puede provenir de dispositivos legítimos, afecta servicios
+                específicos, métodos como inundaciones UDP, TCP SYN, HTTP.</td>
+            </tr>
+            <tr>
+              <td>Clasificación</td>
+              <td>Ataques de disponibilidad, que impiden el uso normal de la red.</td>
+            </tr>
+            <tr>
+              <td>Prevención</td>
+              <td>Firewalls, filtrado de tráfico, limitación de tasa, servicios DDoS como Cloudflare,
+                monitoreo regular.</td>
+            </tr>
+          </table>
+          <div class="stats-highlight">
+            <div class="stats-title"><i class="fas fa-chart-bar"></i> Análisis Crítico:</div>
+            <p>Los DDoS han evolucionado, con ataques de petabits por segundo en 2024, según Embroker, lo
+              que requiere soluciones escalables. La dificultad radica en diferenciar tráfico legítimo, y
+              las empresas deben invertir en protección avanzada.</p>
+          </div>
+        </div>        
+      </div>
+
+      <h2 class="section-title">Otros ataques menos comunes, pero peligrosos</h2>
+
+      <div class="attack-grid">
+        <div class="attack-card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>SQL Injection</h3>
+          </div>
+          <div class="card-content">
+            <p>Inyección de código SQL malicioso en formularios web para acceder o manipular bases de datos.</p>
+            <div class="attack-details" id="details-sql">
+              <p>Los ataques de SQL Injection permiten a los atacantes ejecutar comandos SQL arbitrarios en la base de datos de una aplicación web.</p>
+              <p>Estos ataques pueden resultar en la exposición de datos sensibles, modificación de datos, o incluso la eliminación de bases de datos enteras.</p>
+            </div>
+            <button class="read-more" data-target="details-sql">Leer más <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="attack-card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Cross-Site Scripting (XSS)</h3>
+          </div>
+          <div class="card-content">
+            <p>Inyección de scripts maliciosos en sitios web para ejecutar código en el navegador del usuario.</p>
+            <div class="attack-details" id="details-xss">
+              <p>Los ataques XSS permiten a los atacantes inyectar scripts maliciosos en páginas web vistas por otros usuarios.</p>
+              <p>Estos scripts pueden robar cookies, sesiones, o redirigir a los usuarios a sitios maliciosos, comprometiendo la seguridad de la información.</p>
+            </div>
+            <button class="read-more" data-target="details-xss">Leer más <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="attack-card">
+          <div class="card-header">
+            <div class="card-icon"><i class="fas fa-ear-listen"></i></div>
+            <h3>Escucha Clandestina</h3>
+          </div>
+          <div class="card-content">
+            <p>Captura no autorizada de datos transmitidos en la red, violando la privacidad.</p>
+            <div class="attack-details" id="details-eavesdrop">
+              <p>Este tipo de ataque es pasivo y por lo tanto difícil de detectar. Es particularmente
+                efectivo en conexiones no encriptadas y representa un riesgo significativo en redes
+                Wi-Fi públicas.</p>
+              <p>Aunque las medidas de encriptación son efectivas contra estos ataques, requieren una
+                implementación constante, especialmente en dispositivos IoT.</p>
+            </div>
+            <button class="read-more" data-target="details-eavesdrop">Leer más <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline de ataques históricos -->
+    <section>
+      <h2 class="section-title">Cronología de Ataques Destacados</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-title">Ataque DDoS récord de 5.5 Tbps</div>
+          <p>El mayor ataque DDoS registrado hasta la fecha, afectando múltiples proveedores de servicios en la nube y causando interrupciones globales.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-title">Campaña masiva de phishing QR</div>
+          <p>Sofisticada campaña que utilizó códigos QR maliciosos para dirigir a los usuarios a sitios de phishing, afectando a millones de usuarios.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-title">Ransomware en infraestructura crítica</div>
+          <p>Ataque coordinado que paralizó sistemas de control industrial en múltiples países, exigiendo rescates millonarios.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2016</div>
+          <div class="timeline-title">Malware IoT "BotnetX"</div>
+          <p>Infección masiva de dispositivos IoT que creó una de las mayores redes botnet registradas, utilizada posteriormente para ataques DDoS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusiones -->
+    <section class="conclusion">
+      <h2 class="section-title">Conclusión y Recomendaciones</h2>
+      <p>
+        La investigación muestra que los ataques en redes son diversos y evolucionan rápidamente, con un aumento
+        en la frecuencia y sofisticación. Se recomienda una estrategia de seguridad multicapa, incluyendo:
+      </p>
+      <ul class="recommendations-list">
+        <li>Implementación de medidas de encriptación en todas las comunicaciones</li>
+        <li>Educación continua de los usuarios sobre riesgos y buenas prácticas</li>
+        <li>Uso de autenticación multifactor (MFA) para acceder a sistemas críticos</li>
+        <li>Realización de copias de seguridad regulares y pruebas de restauración</li>
+        <li>Monitoreo constante de la red para detectar actividades sospechosas</li>
+        <li>Actualización y parcheo regular de todos los sistemas y software</li>
+      </ul>
+    </section>
+
+    <!-- Sección de referencias bibliograficas -->
+    <section class="bibliography">
+      <h2 class="section-title">Referencias Bibliográficas</h2>
+      <ul class="bibliography-list">
+        <li>BLOG.INVGATE.COM. (2024, septiembre 4). Los 14 tipos de ciberataque más comunes (y cómo prevenirlos). Recuperado de https://blog.invgate.com</li>
+        <li>Cloudflare. (s.f.). What is a DDoS attack? Recuperado de https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/</li>
+        <li>Embroker. (2025). Must-know cyberattack statistics and trends 2025. Recuperado de https://www.embroker.com/blog/cyber-attack-statistics/</li>
+        <li>FORTINET.COM. (2023, noviembre 15). Tipos de ciberataques: ataque DDoS, ransomware y más. Recuperado de https://fortinet.com</li>
+        <li>IEBSCHOOL.COM. (2023, noviembre 8). Ciberseguridad: Tipos de ataques y en qué consisten. Recuperado de https://iebschool.com</li>
+        <li>Malwarebytes. (s.f.). What is malware?. Recuperado de https://www.malwarebytes.com/malware</li>
+        <li>National University. (2024). 101 cybersecurity statistics and trends for 2024. Recuperado de https://www.nu.edu/blog/cybersecurity-statistics/</li>
+        <li>OPENWEBINARS.NET. (2023, octubre 13). Los 15 tipos de ciberataques que deberías conocer. Recuperado de https://openwebinars.net</li>
+        <li>PurpleSec. (2024). 2024 cybersecurity statistics: The ultimate list of stats, data & trends. Recuperado de https://purplesec.us/resources/cybersecurity-statistics/</li>
+        <li>PurpleSec. (s.f.). Recent cyber attacks in 2024 | The breach report. Recuperado de https://purplesec.us/breach-report/</li>
+        <li>TechTarget. (2025). 35 cybersecurity statistics to lose sleep over in 2025. Recuperado de https://www.techtarget.com/whatis/34-Cybersecurity-Statistics-to-Lose-Sleep-Over-in-2020</li>
+        <li>Terranova Security. (2024). 130 cyber security statistics: 2024 trends and data. Recuperado de https://www.terranovasecurity.com/blog/cyber-security-statistics</li>
+        <li>UK Government. (2024). Cyber security breaches survey 2024. Recuperado de https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2024/cyber-security-breaches-survey-2024</li>
+        <li>Varonis. (2024). 157 cybersecurity statistics and trends [updated 2024]. Recuperado de https://www.varonis.com/blog/cybersecurity-statistics</li>
+        <li>Wikipedia. (2025, febrero 11). Ciberataque. Recuperado de https://es.wikipedia.org</li>
+        <li>Wikipedia. (s.f.). Eavesdropping. Recuperado de https://enswikipedia.org/wiki/Eavesdropping</li>
+        <li>Wikipedia. (s.f.). Man-in-the-middle attack. Recuperado de https://en.wikipedia.org/wiki/Man-in-the-middle_attack</li>
+        <li>Wikipedia. (s.f.). Phishing. Recuperado de https://es.wikipedia.org/wiki/Phishing</li>
+        <li>WINEMPRESAS.PE. (2024, abril 2). Ataques informáticos: Causas y 15 Tipos de Ciberataques. Recuperado de https://winempresas.pe</li>
+      </ul>
+
+      <!-- Botón para mostrar/ocultar referencias -->
+      <button id="toggle-references">Ver más referencias <i class="fas fa-chevron-down"></i></button>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
